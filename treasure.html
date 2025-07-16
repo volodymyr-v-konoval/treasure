@@ -59,6 +59,10 @@
         var distance = getDistance(event, target);
         var distanceHint = getDistanceHint(distance);
         $("#distance").text(distanceHint);
+
+        if (distance < 8) {
+            alert("The treasure has been found! Total clicks: " + clicks);
+        }
     </script>
 </body>
 </html>
